@@ -15,13 +15,18 @@ body {
     
 }
 
+.searchcard-body {
+    background-color: yellow;
+    width: 20rem;
+}
+
 input {
     width: 150rem
 }
 
-#city-list {
+/*#city-list {
     width: 22rem;
-}
+}*/
 
 #city-date-icon, #city-name, #current-icon {
     display: flex;
@@ -33,31 +38,31 @@ input {
 
 .row {
     background-color: none;
-    width:auto;
+    
 }
 
 h5 {
     font-weight: bold;
 }
 
-#forcast-cards {
+/*#forcast-cards {
     display:flex;
     flex-direction: row;
-    background-color: pink;
-}
+    background-color: lavender;
+}*/
 .col-md-12 {
-    background: blue;
+    background-color: lavender;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100rem;
-
-}
-.searchcard-body {
-    background-color: yellow;
-    width: 20rem;
+    flex-wrap: wrap;
+   
 }
 
+.card {
+    background: pink;
+
+}
 
 
 
@@ -83,10 +88,6 @@ h5 {
     background: none;
 }
 
-.card {
-    background: none;
-
-}
 
 
 .card-text {
