@@ -32,12 +32,13 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: center space-around space-between;
-    background-color: pink;
+    background-color:green;
 }
 
 
 .row {
     background-color: none;
+    
     
 }
 
@@ -51,20 +52,30 @@ h5 {
     background-color: lavender;
 }*/
 .col-md-12 {
-    background-color: lavender;
+    background-color: none;
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap;   
 }
 
-.card {
-    background: pink;
+.current-card {
+    background: blue;
+}
+
+.card-body {
+    background-color: pink;   
 
 }
 
+.card-img-top {
+    background-color:red
 
+}
+
+.card-text {
+    padding: 1rem;
+}
 
 
 
