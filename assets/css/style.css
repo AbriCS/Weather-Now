@@ -1,6 +1,11 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .header {
     background-color: aqua;
+    text-align: center;
+    padding: 15px;
 }
 
 .container {
@@ -8,7 +13,81 @@
     
 }
 
+input {
+    width: 75%
+}
+
+#city-list {
+    width: 22rem;
+}
+
+#city-date-icon, #city-name, #current-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-around space-between;
+}
+
+
 .row {
     background-color: pink;
     width: 150px;
 }
+
+h5 {
+    font-weight: bold;
+}
+
+#forcast-cards {
+    display:flex;
+    flex-direction: row;
+    background-color: yellowgreen ;
+}
+.col-md1 {
+    background: none;
+}
+.card-body {
+    background-color: none;
+}
+
+.form-inline {
+    background-color: none;
+}
+
+.form-control {
+    background-color: none;
+}
+
+.btn-outline {
+    background: none;
+}
+
+.list-group {
+    background: none;
+}
+
+.col-md2 {
+    background: none;
+}
+
+.card {
+    background: none;
+}
+
+
+.card-text {
+    background: none;
+}
+
+.class-forcast1 {
+    background: none;
+}
+
+.class-forcast2 {
+    background: none;
+}
+
+.card-title {
+    background: none;
+}
+
+
