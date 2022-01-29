@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
 
+
 //j-Query
 
 const city=$("#city")
@@ -26,5 +27,10 @@ fetch(`api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}
     console.log(data);
 }) }) 
  }
+// 
+
+
+
+
 
 })
