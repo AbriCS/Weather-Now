@@ -42,7 +42,7 @@ const temp=$("#current-temp").text("Temperature:"+" " + data.main.temp)
 const humidity=$("#current-humidity").text("Humidity:"+" " + data.main.humidity)
 const windspeed=$("#current-wind").text("Wind Speed:"+" "+ data.wind.speed)
 $("#city-date-icon").append(cityname, weathericon)
-$(".current-text").append(temp, humidity, windspeed)
+$(".current-day").append(temp, humidity, windspeed)
 
 }
 function getForcast (lon,lat){
@@ -55,7 +55,7 @@ fetch(url).then((res)=>{
   console.log(data)
   displayForcast(data)
   const uvindex=$("#current-uv").text("UV Index:"+" "+ data.current.uvi)
-  $(".current-text").append(uvindex)
+  $(".current-day").append(uvindex)
 })
 
 }

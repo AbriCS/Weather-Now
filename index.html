@@ -20,19 +20,19 @@
 
 <div class="container">
     <div class=row> 
-    <form class="col-md1">
-        <div class="card-body">
+    <searchform class="col-md-4">
+        <div class="searchcard-body">
         <h5>Search for a City near You:</h5>
         <form class="form-inline">
         <input id="city" class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button id="searchBtn" class="btn-outline" type="submit">Search</button>
         </form>  
         </div>
-    </form>
+    </searchform>
     </div>
 
     <div>
-        <ul id="city-list"  class="list-group"></ul>
+     <ul id="city-list"  class="list-group"></ul>
     </div>
 <div class="col-md-6">
 <div id="current-weather" class='card'>
@@ -41,7 +41,7 @@
             <h5 id='city-name'></h5>
            
         </div>
-        <div class="card-text current-text">
+        <div class="card-text current-day">
         <p  id="current-temp"></p>
         <p  id="current-humidity"></p>
         <p  id="current-uv"></p>
@@ -51,10 +51,10 @@
        </div> 
       </div>
       <div class="row">
-        <div id="forcast-weather" class="col-md-6">
+        <div id="forcast-weather" class="col-md-12">
         <h3>5-Day Forcast:</h3>  
 
-       <!--div id="forecast-cards">
+       <div id="forecast-cards">
          <div class="card-forcast">
              <div id="forecast1" class="card-body">
                  <span class="card-title"  id='forecast-date1'></span>
@@ -99,7 +99,7 @@
                                           <span id='forcast-icon2'></span>
                                            <p class="card-text" id="forecast-temp5"></p>
                                            <p class="card-text" id="forecast-humidity5"></p>
-                                        </div> --> 
+                                        </div> 
        
        
        
