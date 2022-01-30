@@ -82,50 +82,20 @@ for (let i=0; i<forcastdays;i++){
 
 ` 
 forcastcontainer.append(forcast)
+
 clearBtn.addEventListener('on click', location.reload)
 }
 
+let searchBtn = document.getElementById("searchBtn");
+let list = document.getElementById("city-list");
+let input = document.getElementById("city");
 
 
-/*const storageInput = document.querySelector('.city-info');
-const text = document.querySelector('.stored-data');
-const button = document.querySelector('.button');
-storageInput.addEventListener('search',letter => {
-  text.textContent = letter.target.value
-})
-
-const saveToLocalStorage = ()=> {
-  localStorage.setItem('textsearch', text.textContent)
-}
-button.addEventListener('click', saveToLocalStorage)
-
-
-/*const city = document.getElementById("city");
-const searchBtn = document.getElementById("searchBtn");
-const storedData = document.getElementById("storedData");
-
-searchBtn.onclick = function (){
-const inpvalue = inpValue.value;
-};
-
-if (value){
-  localStorage.setItem(value);
-  location.reload();
-}
-
-for (let i=0; i< localStorage.length; i++) {
-  const value = localStorage.getItem(key); 
-
-  storedData.innerHTML +=`${value}`
-}*/
-
-
-const grandparent = document.querySelector(".grandparent")
-const parent = document.querySelector(".parent")
-const child = document.querySelector(".child")
-
-grandparent.addEventListener('click',e => {
-  console.log(e)
+searchBtn.addEventListener("click", function(){
+  var paragraph = document.createElement('p');
+  paragraph-style
+  paragraph.innerText = input.value
+  list.appendChild(paragraph);
 })
 
 
