@@ -18,8 +18,10 @@ body {
     background-color: yellow;
     width: 20rem;
     margin-bottom: 10px;
+    margin-left: 45px;
     display: flexbox;
     border: borderbox;
+    align-items: center;
 }
 
 .form-inline {
@@ -85,6 +87,8 @@ h3 {
     background-color: lavender;
 
 }
+
+
 .col-md-12 {
     background-color: none;
     display:flex;
@@ -108,8 +112,6 @@ h3 {
 
 .card  {
     background-color: pink; 
-    
-
     
 }
 
