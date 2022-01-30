@@ -99,7 +99,7 @@ h1 {
     box-sizing: border-box;
     background-color: lavender;
     padding: 15px 40px 60px;
-    
+    height: 1200px;
 
 }
 
@@ -109,9 +109,11 @@ h1 {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
-      
+    flex-wrap: wrap;      
 }
+
+
+
 
 .current-weather {
     display:flex;
@@ -128,6 +130,7 @@ h1 {
 
 .card  {
     background-color: pink; 
+    height: 200px;
     
 }
 
@@ -156,15 +159,7 @@ h1 {
 }  
    
 
-  /*  @media (min-width: 900px) {
-        .container{
-            display: flex;
-            align-items:stretch;
-            justify-content: space-between space-around;
-            background-color: bisque;
-        }*/
-     
-
+  
 
 .form-control {
     background-color: none;
@@ -193,4 +188,12 @@ h1 {
 }
 
 
+     @media (min-width: 900px) {
+        .container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between space-around;
+            background-color: bisque;
+        }}
+     
 
