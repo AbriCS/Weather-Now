@@ -38,8 +38,8 @@ function displayCurrentWeather(data) {
   console.log(data);
 const cityname=$("#city-name").text(data.name)
 const weathericon=$("<img class='picture'>").attr("src",`https://openweathermap.org/img/w/${data.weather[0].icon}.png`)
-const temp=$("#current-temp").text("Temperature:"+" " + data.main.temp)
-const humidity=$("#current-humidity").text("Humidity:"+" " + data.main.humidity)
+const temp=$("#current-temp").text("Temperature:"+" " + data.main.temp+" deg C")
+const humidity=$("#current-humidity").text("Humidity:"+" " + data.main.humidity+ " %")
 const windspeed=$("#current-wind").text("Wind Speed:"+" "+ data.wind.speed)
 $("#city-date-icon").append(cityname, weathericon)
 $(".current-day").append(temp, humidity, windspeed)
@@ -66,10 +66,11 @@ const forcastcontainer=$("#forcast-weather")
 
 
 for (let i=0; i<forcastdays;i++){
- const forcast=`<div class="card" style="width: 18rem;">
- <img src="https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" class="card-img-top" alt="...">
+ const forcast=`<div class="card" style="width: 160px;">
+ <img src="https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" class="card-img-top" alt="weather icon">
 
- <div class="card-body"> 
+ 
+ <div class="card"> 
    <div class="card-text">
 <p id="forecast-temp">Temperature: ${data.daily[i].temp.day}</p>
 <p id="forecast-humidity">Humidity: ${data.daily[i].humidity}</p>
@@ -77,6 +78,7 @@ for (let i=0; i<forcastdays;i++){
 </div>
  </div>
 </div>
+
 ` 
 forcastcontainer.append(forcast)
 }

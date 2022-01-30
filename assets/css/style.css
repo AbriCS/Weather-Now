@@ -9,19 +9,31 @@ body {
 }
 
 .container {
-    background-color:none;
-    display:flexbox;
-    flex-direction:row
-    
+    background-color:bisque;
+    max-width: 1400px;
+    display:flex;
+     
 }
 
 .searchcard-body {
     background-color: yellow;
     width: 20rem;
+    margin-bottom: 10px;
+    display: flexbox;
+    border: borderbox;
 }
 
-input {
-    width: 150rem
+.form-inline {
+    width: 15rem;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+.btn-outline {
+    border: 5px solid aqua;
+   display:flexbox; 
+   flex-direction: row;
+   margin-left: 50px;
 }
 
 /*#city-list {
@@ -31,42 +43,57 @@ input {
 #city-date-icon, #city-name, #current-icon {
     display: flex;
     flex-direction: row;
-    justify-content: center space-around space-between;
+    justify-content: center;
     background-color:green;
+    padding: 1px 5px 0px 0px;
+  
 }
 
+.current-card {  
+    background-color: blue;  
+    width: 180px; 
+    margin-left: 50px; 
 
-.row {
-    background-color: none;
-    
-    
 }
 
 h5 {
     font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }
 
 /*#forcast-cards {
     display:flex;
     flex-direction: row;
     background-color: lavender;
-}*/
+}
 .col-md-12 {
     background-color: none;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     flex-wrap: wrap;   
+}*/
+
+.current-weather {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-around;
+   
 }
 
-.current-card {
-    background: blue;
+.card  {
+    background-color: pink; 
+    
+
+    
 }
 
-.card-body {
-    background-color: pink;   
 
-}
 
 .card-img-top {
     background-color:red
@@ -75,13 +102,11 @@ h5 {
 
 .card-text {
     padding: 1rem;
+    font-size: small;
 }
 
 
 
-.form-inline {
-    background-color: none;
-}
 
 .form-control {
     background-color: none;
@@ -101,10 +126,6 @@ h5 {
 
 
 
-.card-text {
-    background: none;
-}
-
 .class-forcast1 {
     background: none;
 }
@@ -113,8 +134,5 @@ h5 {
     background: none;
 }
 
-.card-title {
-    background: none;
-}
 
 
