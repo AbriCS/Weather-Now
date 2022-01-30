@@ -15,7 +15,7 @@ $("#searchBtn").on("click",function(event){
 })
 
 function getCurrentWeather(city){
-  //console.log ("this is in the function", city)
+  
   const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric
   `
   
@@ -86,19 +86,37 @@ forcastcontainer.append(forcast)
 clearBtn.addEventListener('on click', location.reload)
 }
 
-let searchBtn = document.getElementById("searchBtn");
-let list = document.getElementById("city-list");
+let search = document.getElementById("searchBtn");
+let list = document.getElementById("list-container");
 let input = document.getElementById("city");
 
 
-searchBtn.addEventListener("click", function(){
+search.addEventListener('click', function(){
   var paragraph = document.createElement('p');
-  paragraph-style
+  paragraph.classList.add('paragraph-style');
   paragraph.innerText = input.value
   list.appendChild(paragraph);
 })
 
+/*function createCityList(citySearchList) {
+  $("#city-list").empty();
 
+  var keys = Object.keys(citySearhList);
+  for (var i=0; i< keys.length; i++) {
+    var cityListEntry = $("<button>");
+    cityListEntry.addClass("list-group-item list-group-item-action");
+
+    var splitStr = keys[i]. toLowerCase().split(" ");
+  for (var j = 0; j < aplitStr.length; j++) {
+    splitStr[j]= 
+    splitStr [j].charAt(0).toUpperCase() + splitStr[j].substring(1);
+  }
+  var titleCasedCity = splitStr.join(" ");
+  cityListEntry.text(titleCasedCity);
+  $("#city-list").append(cityListEntry);
+}
+  }
+  }*/
 
 }
 

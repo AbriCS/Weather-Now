@@ -41,9 +41,6 @@ body {
    margin-left: 50px;
 }
 
-/*#city-list {
-    width: 22rem;
-}*/
 
 #city-date-icon, #city-name, #current-icon {
     display: flex;
@@ -89,11 +86,6 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-/*#forcast-cards {
-    display:flex;
-    flex-direction: row;
-    /* background-color: lavender;
-}*/
 
 .future-forcast {
     display: flex;
@@ -104,7 +96,6 @@ h1 {
 
 }
 
-
 .col-md-12 {
     background-color: none;
     display:flex;
@@ -113,9 +104,6 @@ h1 {
     flex-wrap: wrap;      
 }
 
-
-
-
 .current-weather {
     display:flex;
     flex-direction: row;
@@ -123,10 +111,6 @@ h1 {
    justify-content: space-around;
    
 }
-
-
-
-
 
 
 .card  {
@@ -158,24 +142,17 @@ h1 {
     max-width: 2000px;
     
 }  
-   
-/*.stored-data {
-    background-color: blueviolet;
-    width: 180px;
-    margin-left: 45px;
-
-}*/
   
 
 .city-info {
     background-color: none;
 }
 
-.button {
+#searchBtn {
     background: greenyellow;
 }
 
-.list-group {
+#list-container {
     display: flex;
     box-sizing: border-box;
     border: 1px solid black;
@@ -192,29 +169,20 @@ h1 {
 }
 
 
-
-.class-forcast1 {
-    background: none;
-}
-
-.class-forcast2 {
-    background: none;
-}
-
-
-     @media (min-width: 900px) {
-        .container {
-            display: flex;
-            margin-top: 100px;
-            align-items: stretch;
-            justify-content: space-between space-around;
-            background-color: bisque;
-        }}
+@media (min-width: 900px) {
+.container {
+display: flex;
+margin-top: 70px;
+align-items: stretch;
+justify-content: space-between space-around;
+background-color: bisque;
+}}
 
 
 .paragraph-style {
-  margin: 0px
-    
+margin: 0px;
+cursor:grab;
+     
 }
      
 .footer {
