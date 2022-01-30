@@ -12,7 +12,10 @@ body {
     padding: 15px;
 }
 
-
+.date {
+    font-weight: bold;
+    text-align: center; 
+}
 
 .searchcard-body {
     background-color: yellow;
@@ -141,7 +144,8 @@ h1 {
     margin-top: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
-    max-width: 1400px;
+    padding-left: 10%;
+    max-width: 2000px;
     
    
 

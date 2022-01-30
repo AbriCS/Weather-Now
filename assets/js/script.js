@@ -32,7 +32,8 @@ getForcast(lon, lat)
    
   })
    }
-// 
+/*current date */
+  $("#currentDay").text(moment().format("dddd MMM Do YYYY"))
 
 function displayCurrentWeather(data) {
   console.log(data);
