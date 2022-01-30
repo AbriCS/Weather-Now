@@ -1,6 +1,5 @@
 # Moments
-This simple Calender app is a Week 4 Homework Task
-<br><br>
+
 ## Description
 
 A Weather Dashboard with a 5-day forcast.
@@ -63,9 +62,9 @@ For advice on common problems or issues related to this project, please contact 
 ## Version History
 
 - <b>0.2  The Latest<b>
-    - Click [here](https://abrics.github.io/Weather-Now/) for the final release. 2022/01/22.
+    - Click [here](https://abrics.github.io/Weather-Now/) for the final release. 2022/01/30.
 - 0.1
-  - Initial Release 2022/01/20
+  - Initial Release 2022/01/27
 <br><br>
  
 ## License
@@ -75,6 +74,7 @@ This project is licensed under the [Creative Commons](https://creativecommons.or
  
 ## Acknowledgments
 https://openweathermap.org/api
+<br>
 [awesome-readme](https://github.com/matiassingers/awesome-readme)
 
 
