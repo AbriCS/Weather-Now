@@ -4,16 +4,15 @@ body {
 
 .header {
     background-color: aqua;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    width: 100%;
     text-align: center;
     padding: 15px;
 }
 
-.container {
-    background-color:bisque;
-    max-width: 1400px;
-    display:flex;
-     
-}
+
 
 .searchcard-body {
     background-color: yellow;
@@ -30,7 +29,7 @@ body {
 }
 
 .btn-outline {
-    border: 5px solid aqua;
+    border: 5px solid rgb(22, 26, 26);
    display:flexbox; 
    flex-direction: row;
    margin-left: 50px;
@@ -45,10 +44,19 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color:green;
+    box-sizing: border-box;
     padding: 1px 5px 0px 0px;
   
 }
 
+@media (min-width: 900px) {
+.current-card-container{
+    display: flex;
+   flex-basis: auto;
+    align-items:stretch;
+    justify-content: space-between space-around;
+
+}}
 .current-card {  
     background-color: blue;  
     width: 180px; 
@@ -68,15 +76,15 @@ h3 {
 /*#forcast-cards {
     display:flex;
     flex-direction: row;
-    background-color: lavender;
-}
+    /* background-color: lavender;
+}*/
 .col-md-12 {
     background-color: none;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     flex-wrap: wrap;   
-}*/
+}
 
 .current-weather {
     display:flex;
@@ -85,6 +93,11 @@ h3 {
    justify-content: space-around;
    
 }
+
+
+
+
+
 
 .card  {
     background-color: pink; 
@@ -106,6 +119,21 @@ h3 {
 }
 
 
+.container {
+    background-color:rgb(192, 255, 203);
+    margin-top: 50px;
+    padding-top: 40px;
+    max-width: auto;
+    display:flex;
+
+    @media (min-width: 900px) {
+        .container{
+            display: flex;
+            align-items:stretch;
+            justify-content: space-between space-around;
+            background-color: bisque;
+        }
+     
 
 
 .form-control {
