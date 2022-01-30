@@ -56,13 +56,14 @@ body {
     display: flex;
    flex-basis: auto;
     align-items:stretch;
-    justify-content: space-between space-around;
+    justify-content: space-around;
 
 }}
 .current-card {  
     background-color: blue;  
     width: 180px; 
-    margin-left: 50px; 
+    margin-left: 45px; 
+
 
 }
 
@@ -72,9 +73,14 @@ h5 {
 }
 
 h3 {
+    font-weight: bold;
     text-align: center;
 }
 
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
 /*#forcast-cards {
     display:flex;
     flex-direction: row;
@@ -85,6 +91,7 @@ h3 {
     display: flex;
     box-sizing: border-box;
     background-color: lavender;
+    padding: 15px 40px;
 
 }
 
@@ -94,7 +101,8 @@ h3 {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+      
 }
 
 .current-weather {
@@ -131,18 +139,19 @@ h3 {
 .container {
     background-color:rgb(192, 255, 203);
     margin-top: 50px;
+    padding-bottom: 20px;
     padding-top: 40px;
     max-width: 1400px;
     
    
 
-    @media (min-width: 900px) {
+  /*  @media (min-width: 900px) {
         .container{
             display: flex;
             align-items:stretch;
             justify-content: space-between space-around;
             background-color: bisque;
-        }
+        }*/
      
 
 
