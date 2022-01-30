@@ -25,15 +25,17 @@
         <div class="searchcard-body">
         <h5>Search for a City near You:</h5>
         <form class="form-inline">
-        <input id="city" class="form-control" type="search" placeholder="Enter the Name of your City" aria-label="Search">
-        <button id="searchBtn" class="btn-outline" type="submit">Search</button>
-        </form>  
-        </div>
+        <input id="city" class="city-info" type="search" placeholder="City Name" aria-label="Search">
+        <button id="searchBtn" class="button" type="submit">Search</button>
+        <button id="clearBtn"  class="clBtn">Clear</button>
+        </form> 
+        </div>  
+        <ul id="city-list"  class="list-group"></ul> 
     </searchform>
- 
+    
 
     <div class="current-card-container">
-     <ul id="city-list"  class="list-group"></ul>
+     
     </div>
         <div class="col-md-4">
         <div id="current-weather">
@@ -59,77 +61,25 @@
         <div id="forcast-weather" class="col-md-12">
         </div>
       </div>
-            
-
-
-            
-      <!-- <div class="row">
-       <div id="forecast-cards">
-         <div class="card-forcast">
-             <div id="forecast1" class="card-body">
-                 <span class="card-title"  id='forecast-date1'></span>
-               <span id='forcast-icon1'></span>
-                <p class="card-text" id="forecast-temp1"></p>
-                <p class="card-text" id="forecast-humidity1"></p>
-             </div> 
-           </div> 
-
-        
-            <div id="forecast-cards">
-             <div class="card-forcast">
-                 <div id="forecast2" class="card-body">
-                     <span class="card-title" id='forecast-date1'></span>
-                   <span id='forcast-icon2'></span>
-                    <p class="card-text" id="forecast-temp2"></p>
-                    <p class="card-text" id="forecast-humidity2"></p>
-                 </div> 
-       
-                 <div id="forecast-cards">
-                    <div class="card-forcast">
-                        <div id="forecast3" class="card-body">
-                            <span class="card-title"  id='forecast-date1'></span>
-                          <span id='forcast-icon2'></span>
-                           <p class="card-text" id="forecast-temp3"></p>
-                           <p class="card-text" id="forecast-humidity3"></p>
-                        </div> 
-       
-                        <div id="forecast-cards">
-                            <div class="card-forcast">
-                                <div id="forecast4" class="card-body">
-                                    <span class="card-title"  id='forecast-date1'></span>
-                                  <span id='forcast-icon2'></span>
-                                   <p class="card-text" id="forecast-temp4"></p>
-                                   <p class="card-text" id="forecast-humidity4"></p>
-                                </div> 
-       
-                                <div id="forecast-cards">
-                                    <div class="card-forcast">
-                                        <div id="forecast4" class="card-body">
-                                            <span class="card-title"  id='forecast-date1'></span>
-                                          <span id='forcast-icon2'></span>
-                                           <p class="card-text" id="forecast-temp5"></p>
-                                           <p class="card-text" id="forecast-humidity5"></p>
-                                        </div> --> 
-       
-       
-       
-       
-       
-       
-       
-                </div>
-
-      <!--<div id=humidity class="card" >
-        <div class="card-body">
-        </div>  
-        </div>-->
-    </div>
-<!--icons of the weather openweathermapp-->
-
 
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
     <script src="assets/js/script.js"></script>
+
+<footer class="footer">
+<div class="grandparent">
+    <div class="parent">
+        <div class="child"></div> 
+    </div>
+</div>
+
+</footer>
 </body>
+
+
+
+
+
 </html>

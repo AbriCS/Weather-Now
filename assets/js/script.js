@@ -72,7 +72,7 @@ for (let i=0; i<forcastdays;i++){
 
  
  <div class="card"> 
-   <div class="card-text">
+  <div class="card-text">
 <p id="forecast-temp">Temperature: ${data.daily[i].temp.day}</p>
 <p id="forecast-humidity">Humidity: ${data.daily[i].humidity}</p>
 <p id="forecast-wind">Wind Speed: ${data.daily[i].wind_speed}</p>
@@ -82,7 +82,53 @@ for (let i=0; i<forcastdays;i++){
 
 ` 
 forcastcontainer.append(forcast)
+clearBtn.addEventListener('on click', location.reload)
 }
+
+
+
+/*const storageInput = document.querySelector('.city-info');
+const text = document.querySelector('.stored-data');
+const button = document.querySelector('.button');
+storageInput.addEventListener('search',letter => {
+  text.textContent = letter.target.value
+})
+
+const saveToLocalStorage = ()=> {
+  localStorage.setItem('textsearch', text.textContent)
+}
+button.addEventListener('click', saveToLocalStorage)
+
+
+/*const city = document.getElementById("city");
+const searchBtn = document.getElementById("searchBtn");
+const storedData = document.getElementById("storedData");
+
+searchBtn.onclick = function (){
+const inpvalue = inpValue.value;
+};
+
+if (value){
+  localStorage.setItem(value);
+  location.reload();
+}
+
+for (let i=0; i< localStorage.length; i++) {
+  const value = localStorage.getItem(key); 
+
+  storedData.innerHTML +=`${value}`
+}*/
+
+
+const grandparent = document.querySelector(".grandparent")
+const parent = document.querySelector(".parent")
+const child = document.querySelector(".child")
+
+grandparent.addEventListener('click',e => {
+  console.log(e)
+})
+
+
 
 }
 
