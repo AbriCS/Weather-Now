@@ -78,6 +78,13 @@ h3 {
     flex-direction: row;
     /* background-color: lavender;
 }*/
+
+.future-forcast {
+    display: flex;
+    box-sizing: border-box;
+    background-color: lavender;
+
+}
 .col-md-12 {
     background-color: none;
     display:flex;
@@ -123,8 +130,9 @@ h3 {
     background-color:rgb(192, 255, 203);
     margin-top: 50px;
     padding-top: 40px;
-    max-width: auto;
-    display:flex;
+    max-width: 1400px;
+    
+   
 
     @media (min-width: 900px) {
         .container{
