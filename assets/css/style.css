@@ -78,6 +78,10 @@ h5 {
 h3 {
     font-weight: bold;
     text-align: center;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
 }
 
 h1 {
@@ -94,7 +98,8 @@ h1 {
     display: flex;
     box-sizing: border-box;
     background-color: lavender;
-    padding: 15px 40px;
+    padding: 15px 40px 60px;
+    
 
 }
 
@@ -142,11 +147,13 @@ h1 {
 .container {
     background-color:rgb(192, 255, 203);
     margin-top: 50px;
+    margin-bottom: 0px;
     padding-bottom: 20px;
     padding-top: 40px;
     padding-left: 10%;
     max-width: 2000px;
     
+}  
    
 
   /*  @media (min-width: 900px) {
