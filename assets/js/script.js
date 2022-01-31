@@ -87,16 +87,22 @@ clearBtn.addEventListener('on click', location.reload)
 }
 
 let search = document.getElementById("searchBtn");
-let list = document.getElementById("list-container");
 let input = document.getElementById("city");
 
 
 search.addEventListener('click', function(){
-  var paragraph = document.createElement('p');
-  paragraph.classList.add('paragraph-style');
-  paragraph.innerText = input.value
-  list.appendChild(paragraph);
+  var whitebox = document.getElementById('list-container');
+  whitebox.innerText = input.value
+  //search.push(input.value);
+ // input.value = '';
+ // search();
 })
+
+//let search = document.querySelector("searchBtn");
+//let input = document.querySelector("city");
+
+
+
 
 /*function createCityList(citySearchList) {
   $("#city-list").empty();
