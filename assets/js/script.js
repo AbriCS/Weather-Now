@@ -79,24 +79,41 @@ for (let i=0; i<forcastdays;i++){
 </div>
  </div>
 </div>
-
 ` 
 forcastcontainer.append(forcast)
 
-clearBtn.addEventListener('on click', location.reload)
-}
 
-let search = document.getElementById("searchBtn");
+
+let add = document.getElementById("addBtn");
 let input = document.getElementById("city");
+let city = document.getElementById('city-list')
 
-
-search.addEventListener('click', function(){
+/*search.addEventListener('click', function(){
   var whitebox = document.getElementById('list-container');
   whitebox.innerText = input.value
+})*/
+
+add.addEventListener('click',function(event){
+  event.preventDefault()
+  var paragraph = document.createElement('p')
+  paragraph.innerText = input.value;
+  city.appendChild(paragraph);
+})
+
+
+/*$("#addBtn").on("click",function(){
+  var paragraph = document.createElement('p')
+  paragraph.innerText = city.value;
+whitebox.appendChild(paragraph);  
+  
+  clearBtn.addEventListener('on click', location.reload)*/
+
+
+
   //search.push(input.value);
  // input.value = '';
  // search();
-})
+}
 
 //let search = document.querySelector("searchBtn");
 //let input = document.querySelector("city");
