@@ -58,7 +58,7 @@ fetch(url).then((res)=>{
 })}
 
 function displayForcast(data){
-const forcastdays=5
+let forcastdays=5
 const forcastcontainer=$("#forcast-weather")
 
 
@@ -77,7 +77,6 @@ for (let i=0; i<forcastdays;i++){
 </div>
 ` 
 forcastcontainer.append(forcast)
-
 
 
 let add = document.getElementById("addBtn");
