@@ -20,18 +20,16 @@ function getCurrentWeather(city){
   `
   
   fetch(url).then((res)=>{
-    //console.log(res)
+   
     if(res.ok){
       res.json().then((data)=>{
        const lon=data.coord.lon
        const lat=data.coord.lat
         displayCurrentWeather(data)
 getForcast(lon, lat)
-      })
-    }
-   
-  })
-   }
+      })}
+   })}
+
 /*current date */
   $("#currentDay").text(moment().format("dddd MMM Do YYYY"))
 
@@ -44,8 +42,8 @@ const humidity=$("#current-humidity").text("Humidity:"+" " + data.main.humidity+
 const windspeed=$("#current-wind").text("Wind Speed:"+" "+ data.wind.speed)
 $("#city-date-icon").append(cityname, weathericon)
 $(".current-day").append(temp, humidity, windspeed)
-
 }
+
 function getForcast (lon,lat){
 console.log(lon, lat)
 var url=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&appid=${apiKey}&units=metric`
@@ -57,9 +55,7 @@ fetch(url).then((res)=>{
   displayForcast(data)
   const uvindex=$("#current-uv").text("UV Index:"+" "+ data.current.uvi)
   $(".current-day").append(uvindex)
-})
-
-}
+})}
 
 function displayForcast(data){
 const forcastdays=5
@@ -88,74 +84,15 @@ let add = document.getElementById("addBtn");
 let input = document.getElementById("city");
 let city = document.getElementById('city-list')
 
-/*search.addEventListener('click', function(){
-  var whitebox = document.getElementById('list-container');
-  whitebox.innerText = input.value
-})*/
-
 add.addEventListener('click',function(event){
   event.preventDefault()
   var paragraph = document.createElement('p')
   paragraph.innerText = input.value;
   city.appendChild(paragraph);
 })
+ 
+clearBtn.addEventListener('on click', location.reload)
 
 
-/*$("#addBtn").on("click",function(){
-  var paragraph = document.createElement('p')
-  paragraph.innerText = city.value;
-whitebox.appendChild(paragraph);  
-  
-  clearBtn.addEventListener('on click', location.reload)*/
-
-
-
-  //search.push(input.value);
- // input.value = '';
- // search();
-}
-
-//let search = document.querySelector("searchBtn");
-//let input = document.querySelector("city");
-
-
-
-
-/*function createCityList(citySearchList) {
-  $("#city-list").empty();
-
-  var keys = Object.keys(citySearhList);
-  for (var i=0; i< keys.length; i++) {
-    var cityListEntry = $("<button>");
-    cityListEntry.addClass("list-group-item list-group-item-action");
-
-    var splitStr = keys[i]. toLowerCase().split(" ");
-  for (var j = 0; j < aplitStr.length; j++) {
-    splitStr[j]= 
-    splitStr [j].charAt(0).toUpperCase() + splitStr[j].substring(1);
-  }
-  var titleCasedCity = splitStr.join(" ");
-  cityListEntry.text(titleCasedCity);
-  $("#city-list").append(cityListEntry);
-}
-  }
-  }*/
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}}
 })
