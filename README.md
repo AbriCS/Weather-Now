@@ -11,7 +11,7 @@ A Weather Dashboard with a 5-day forcast.
 The dashboard allows the user to choose a city and see the weather for that day. The weather markers used are as follows.
 
 - Temperature    
-- Huumidity  
+- Humidity  
 - Wind Speed
 - UV rays
 
